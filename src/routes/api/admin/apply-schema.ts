@@ -17,6 +17,7 @@ export const Route = createFileRoute("/api/admin/apply-schema")({
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           const schema = ((await import("../../../../supabase/schema.sql?raw")) as any).default as string;
           const client = new Client({ connectionString: conn, ssl: { rejectUnauthorized: false } });
+          process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
           await client.connect();
           await client.query(schema);
           const check = await client.query(
