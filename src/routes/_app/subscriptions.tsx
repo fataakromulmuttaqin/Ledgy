@@ -101,8 +101,8 @@ function SubsPage() {
         <WalletFilter value={account} accounts={accounts} onChange={setAccount} />
       </div>
       <div className="mb-4 grid gap-3 sm:grid-cols-2">
-        <Card className="min-w-0 bg-ink p-5 text-ink-foreground">
-          <p className="text-xs uppercase tracking-wider text-ink-muted">
+        <Card className="min-w-0 glass-hero p-5 text-white">
+          <p className="text-xs uppercase tracking-wider text-white/80">
             {t("Per bulan (setara)")}
           </p>
           <p className="num mt-1 break-words text-xl font-semibold sm:text-2xl">{money(monthly)}</p>

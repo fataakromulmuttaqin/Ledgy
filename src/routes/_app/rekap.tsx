@@ -144,12 +144,12 @@ function RekapPage() {
             {d.net >= 0 ? t("Surplus") : t("Defisit")} {money(Math.abs(d.net / 12))}/{t("bln")}
           </p>
         </Card>
-        <Card className="min-w-0 bg-ink p-5 text-ink-foreground">
-          <p className="text-xs uppercase tracking-wider text-ink-muted">{t("Rasio menabung")}</p>
+        <Card className="min-w-0 glass-hero p-5 text-white">
+          <p className="text-xs uppercase tracking-wider text-white/80">{t("Rasio menabung")}</p>
           <p className="num mt-2 text-2xl font-semibold">
             {d.income > 0 ? `${Math.round((d.net / d.income) * 100)}%` : "—"}
           </p>
-          <p className="mt-1 text-xs text-ink-muted">{t("dari total pemasukan")}</p>
+          <p className="mt-1 text-xs text-white/80">{t("dari total pemasukan")}</p>
         </Card>
       </div>
 

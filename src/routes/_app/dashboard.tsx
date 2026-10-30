@@ -118,10 +118,10 @@ function Dashboard() {
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        <Card className="flex min-w-0 flex-col bg-ink p-5 text-ink-foreground">
-          <p className="text-xs uppercase tracking-wider text-ink-muted">{t("Total saldo")}</p>
+        <Card className="flex min-w-0 flex-col glass-hero p-5 text-white">
+          <p className="text-xs uppercase tracking-wider text-white/80">{t("Total saldo")}</p>
           <p className="num mt-2 break-words text-2xl font-semibold">{money(d.totalBalanceIdr)}</p>
-          <p className="mt-auto pt-3 text-xs text-ink-muted">
+          <p className="mt-auto pt-3 text-xs text-white/80">
             {d.balances.length} {t("akun aktif")}
           </p>
         </Card>
