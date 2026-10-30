@@ -9,6 +9,18 @@ Starting with v1.0.0, versioned entries (`## [x.y.z]`) are generated automatical
 > [!NOTE]
 > When an entry mentions a **schema section** (`v2`…`v13`), self-hosters must run that section of [`supabase/schema.sql`](supabase/schema.sql) on their Supabase project. Every section is safe to run more than once, and the app keeps working (with the feature disabled) until you do.
 
+## [1.11.0](https://github.com/fataakromulmuttaqin/Ledgy/compare/v1.10.2...v1.11.0) (2026-10-30)
+
+
+### Features
+
+* Ledgy initial import from dompetku v1.10.2 ([d64c30c](https://github.com/fataakromulmuttaqin/Ledgy/commit/d64c30cc9cb049c18f90f07195c53092c85a653f))
+
+
+### Bug Fixes
+
+* relax TLS for one-time schema apply ([f41bb43](https://github.com/fataakromulmuttaqin/Ledgy/commit/f41bb4353db0e99ebd4e0e5faacea26cc92ea92c))
+
 ## [1.10.2](https://github.com/ilramdhan/dompetku/compare/v1.10.1...v1.10.2) (2026-10-23)
 
 
